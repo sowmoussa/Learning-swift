@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Interaction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interaction avec un label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uff-tA-dZz">
+                                <rect key="frame" x="20" y="64" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="l3J-gf-vad"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AW-kI-NMJ">
+                                <rect key="frame" x="50" y="164" width="314" height="60"/>
+                                <color key="backgroundColor" red="0.55677204440000005" green="0.74911801830000002" blue="0.8166797522" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="x6e-ZV-nJp"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Interaction avec un Button"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2aZ-sY-u0H"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="porquerolles" translatesAutoresizingMaskIntoConstraints="NO" id="3v4-E5-OQu">
+                                <rect key="frame" x="20" y="274" width="374" height="498"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="h8J-gu-ZCG">
+                                <rect key="frame" x="20" y="792" width="374" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sv-tX-vox">
+                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <connections>
+                                            <action selector="multpleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yxM-yt-YIN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1R-be-eGq">
+                                        <rect key="frame" x="98.5" y="0.0" width="78.5" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <connections>
+                                            <action selector="multpleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kAn-fv-R8B"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaJ-zL-33U">
+                                        <rect key="frame" x="197" y="0.0" width="78.5" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <connections>
+                                            <action selector="multpleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KIJ-BK-Wkp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujb-MM-M0S">
+                                        <rect key="frame" x="295.5" y="0.0" width="78.5" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <connections>
+                                            <action selector="multpleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uEU-WJ-7SC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ha5-LH-K5d"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2AW-kI-NMJ" secondAttribute="trailing" constant="50" id="Hur-8s-pA0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h8J-gu-ZCG" secondAttribute="trailing" constant="20" id="IHh-iD-Tsv"/>
+                            <constraint firstItem="uff-tA-dZz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NY5-Er-N4I"/>
+                            <constraint firstItem="uff-tA-dZz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ozf-R9-IC1"/>
+                            <constraint firstItem="3v4-E5-OQu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YiL-Rh-GAs"/>
+                            <constraint firstItem="2AW-kI-NMJ" firstAttribute="top" secondItem="uff-tA-dZz" secondAttribute="bottom" constant="50" id="lPz-dG-cU1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uff-tA-dZz" secondAttribute="trailing" constant="20" id="pyq-Om-IPT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h8J-gu-ZCG" secondAttribute="bottom" constant="10" id="q49-fy-9OM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3v4-E5-OQu" secondAttribute="trailing" constant="20" id="rAz-WJ-J26"/>
+                            <constraint firstItem="3v4-E5-OQu" firstAttribute="top" secondItem="2AW-kI-NMJ" secondAttribute="bottom" constant="50" id="t6P-BG-Zxh"/>
+                            <constraint firstItem="h8J-gu-ZCG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tnw-L1-6zW"/>
+                            <constraint firstItem="2AW-kI-NMJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="yM1-4I-fXe"/>
+                            <constraint firstItem="h8J-gu-ZCG" firstAttribute="top" secondItem="3v4-E5-OQu" secondAttribute="bottom" constant="20" id="zu0-mk-x0z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myButton" destination="2AW-kI-NMJ" id="lxV-9n-Kg3"/>
+                        <outlet property="myImage" destination="3v4-E5-OQu" id="lrY-wj-Nhy"/>
+                        <outlet property="myLabel" destination="uff-tA-dZz" id="5e5-xk-N7e"/>
+                        <outletCollection property="buttons" destination="9Sv-tX-vox" collectionClass="NSMutableArray" id="5GA-58-827"/>
+                        <outletCollection property="buttons" destination="f1R-be-eGq" collectionClass="NSMutableArray" id="hEK-Id-dDL"/>
+                        <outletCollection property="buttons" destination="DaJ-zL-33U" collectionClass="NSMutableArray" id="osL-Px-XCJ"/>
+                        <outletCollection property="buttons" destination="ujb-MM-M0S" collectionClass="NSMutableArray" id="gNF-iM-9VG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="porquerolles" width="2000" height="1479"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

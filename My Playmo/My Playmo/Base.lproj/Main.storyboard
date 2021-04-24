@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ELT-QX-rul">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="blippo.ttf">
+            <string>Blippo</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--My Playmos-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="My_Playmo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o4b-CJ-kKH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="418" id="wiC-aC-l0k" customClass="CategoryCell" customModule="My_Playmo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="418"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wiC-aC-l0k" id="4Fb-u3-pjR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="418"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="histoire" translatesAutoresizingMaskIntoConstraints="NO" id="ebn-WV-VEW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="378"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pf5-xh-yRH">
+                                                    <rect key="frame" x="0.0" y="378" width="414" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="29z-KZ-QTP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Blippo" family="Blippo" pointSize="30"/>
+                                                    <color key="textColor" red="0.166549325" green="0.58482438329999997" blue="0.83051067590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Pf5-xh-yRH" secondAttribute="trailing" id="749-9F-77L"/>
+                                                <constraint firstAttribute="bottom" secondItem="Pf5-xh-yRH" secondAttribute="bottom" id="7tp-I1-zUQ"/>
+                                                <constraint firstItem="Pf5-xh-yRH" firstAttribute="top" secondItem="ebn-WV-VEW" secondAttribute="bottom" id="9ZK-ND-GBZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="ebn-WV-VEW" secondAttribute="trailing" id="AbA-Z5-R4A"/>
+                                                <constraint firstItem="ebn-WV-VEW" firstAttribute="top" secondItem="4Fb-u3-pjR" secondAttribute="top" id="JUs-rs-bH2"/>
+                                                <constraint firstItem="Pf5-xh-yRH" firstAttribute="leading" secondItem="4Fb-u3-pjR" secondAttribute="leading" id="oYF-ZH-tvw"/>
+                                                <constraint firstItem="ebn-WV-VEW" firstAttribute="leading" secondItem="4Fb-u3-pjR" secondAttribute="leading" id="tee-u1-24X"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="catIV" destination="ebn-WV-VEW" id="w8w-BQ-5kC"/>
+                                            <outlet property="catLbl" destination="Pf5-xh-yRH" id="4ag-Qz-4wE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o4b-CJ-kKH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Fo-7f-naw"/>
+                            <constraint firstItem="o4b-CJ-kKH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Jcb-7q-kmd"/>
+                            <constraint firstItem="o4b-CJ-kKH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ocz-b1-AaC"/>
+                            <constraint firstItem="o4b-CJ-kKH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PP4-lU-Som"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Playmos" id="h0R-yz-Mw8">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="cart" catalog="system" id="hLQ-1t-OeO">
+                            <color key="tintColor" red="0.166549325" green="0.58482438329999997" blue="0.83051067590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="cartPressed:" destination="BYZ-38-t0r" id="w3J-7s-5WU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="o4b-CJ-kKH" id="pKN-CR-CfW"/>
+                        <segue destination="JJK-Rf-9de" kind="show" identifier="toDetail" id="Otp-Gl-und"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908.69565217391312" y="87.723214285714278"/>
+        </scene>
+        <!--Playmobil Controller-->
+        <scene sceneID="g7c-p4-ZfC">
+            <objects>
+                <tableViewController id="JJK-Rf-9de" customClass="PlaymobilController" customModule="My_Playmo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ttn-yC-ShW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlaymoCell" rowHeight="228" id="lPJ-Kv-i0b" customClass="PlaymoCell" customModule="My_Playmo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="228"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lPJ-Kv-i0b" id="QDb-Cu-IHY">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="228"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yD-b7-Q1S">
+                                            <rect key="frame" x="20" y="11" width="374" height="206"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Athena" translatesAutoresizingMaskIntoConstraints="NO" id="5jf-5e-W6d">
+                                                    <rect key="frame" x="0.0" y="0.0" width="214.5" height="161"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="5jf-5e-W6d" secondAttribute="height" multiplier="4:3" id="RnP-yU-QdK"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zYm-16-XnY">
+                                                    <rect key="frame" x="0.0" y="161" width="374" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="x2E-21-q2X"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Blippo" family="Blippo" pointSize="17"/>
+                                                    <color key="textColor" red="0.166549325" green="0.58482438329999997" blue="0.83051067590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="6ua-Ua-0Kr">
+                                                    <rect key="frame" x="214.5" y="0.0" width="151.5" height="161"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9C-eq-4ae">
+                                                            <rect key="frame" x="127.5" y="0.0" width="24" height="53.5"/>
+                                                            <color key="tintColor" red="0.166549325" green="0.58482438329999997" blue="0.83051067590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <state key="normal" image="cart.fill.badge.plus" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="addToSelection:" destination="lPJ-Kv-i0b" eventType="touchUpInside" id="L28-kb-wES"/>
+                                                            </connections>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8b-JU-6bT">
+                                                            <rect key="frame" x="110.5" y="53.5" width="41" height="54"/>
+                                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvc-n9-Vvw">
+                                                            <rect key="frame" x="111" y="107.5" width="40.5" height="53.5"/>
+                                                            <fontDescription key="fontDescription" name="Blippo" family="Blippo" pointSize="17"/>
+                                                            <color key="textColor" systemColor="systemRedColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="zYm-16-XnY" secondAttribute="bottom" id="21X-El-DZ7"/>
+                                                <constraint firstItem="6ua-Ua-0Kr" firstAttribute="leading" secondItem="5jf-5e-W6d" secondAttribute="trailing" id="71W-K3-Obr"/>
+                                                <constraint firstAttribute="trailing" secondItem="6ua-Ua-0Kr" secondAttribute="trailing" constant="8" id="7uh-GS-DyW"/>
+                                                <constraint firstItem="zYm-16-XnY" firstAttribute="top" secondItem="5jf-5e-W6d" secondAttribute="bottom" id="CYo-xV-lCe"/>
+                                                <constraint firstItem="zYm-16-XnY" firstAttribute="top" secondItem="6ua-Ua-0Kr" secondAttribute="bottom" id="EUB-Jn-8zT"/>
+                                                <constraint firstItem="6ua-Ua-0Kr" firstAttribute="top" secondItem="7yD-b7-Q1S" secondAttribute="top" id="IyY-Vj-g1v"/>
+                                                <constraint firstAttribute="trailing" secondItem="zYm-16-XnY" secondAttribute="trailing" id="Lf0-KR-bFA"/>
+                                                <constraint firstItem="zYm-16-XnY" firstAttribute="leading" secondItem="7yD-b7-Q1S" secondAttribute="leading" id="MoJ-ES-yIH"/>
+                                                <constraint firstItem="5jf-5e-W6d" firstAttribute="leading" secondItem="7yD-b7-Q1S" secondAttribute="leading" id="fun-lp-Nlb"/>
+                                                <constraint firstItem="5jf-5e-W6d" firstAttribute="top" secondItem="7yD-b7-Q1S" secondAttribute="top" id="z8h-ap-A86"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7yD-b7-Q1S" firstAttribute="trailing" secondItem="QDb-Cu-IHY" secondAttribute="trailingMargin" id="DOt-Wx-uyb"/>
+                                        <constraint firstItem="7yD-b7-Q1S" firstAttribute="bottom" secondItem="QDb-Cu-IHY" secondAttribute="bottomMargin" id="Fvc-4c-5Dx"/>
+                                        <constraint firstItem="7yD-b7-Q1S" firstAttribute="leading" secondItem="QDb-Cu-IHY" secondAttribute="leadingMargin" id="PA5-cF-2Zf"/>
+                                        <constraint firstItem="7yD-b7-Q1S" firstAttribute="top" secondItem="QDb-Cu-IHY" secondAttribute="topMargin" id="XGs-VY-uAz"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="playmoIV" destination="5jf-5e-W6d" id="S50-B7-SCf"/>
+                                    <outlet property="playmoNameLbl" destination="zYm-16-XnY" id="xEx-70-o8O"/>
+                                    <outlet property="priceLbl" destination="Lvc-n9-Vvw" id="F5m-df-WH1"/>
+                                    <outlet property="refLbl" destination="H8b-JU-6bT" id="CO6-gc-v9t"/>
+                                    <outlet property="viewContainer" destination="7yD-b7-Q1S" id="OzQ-NF-ErB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JJK-Rf-9de" id="YL6-z1-gAq"/>
+                            <outlet property="delegate" destination="JJK-Rf-9de" id="4c7-xq-7e7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="FTF-hJ-Lbt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2V-sH-zx6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1666.6666666666667" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sUE-lV-cst">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ELT-QX-rul" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Tec-hR-gka">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Blippo" family="Blippo" pointSize="40"/>
+                            <color key="textColor" red="0.166549325" green="0.58482438329999997" blue="0.83051067590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Llg-zl-gcE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kH-7O-tb8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Athena" width="390" height="273"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="cart.fill.badge.plus" catalog="system" width="128" height="106"/>
+        <image name="histoire" width="390" height="273"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
